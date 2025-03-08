@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="css.css">
+  <link rel="icon" type="image/x-icon" href="images/logo.png">
+  <title>Toyota Motors Philippines</title>
+  <style>
+        
+    .Explore {
+        transform: skew(-20deg);
+      font-family: Verdana;
+      font-weight: bold;
+      position: absolute;
+      text-align: center;
+      bottom: 0;
+      margin-left: 25%;
+      margin-bottom: 20%;
+      width: auto;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      background-color: transparent;
+    }
+    
+    .Explore a:hover {
+      background-color: #b20000;
+      color: #ffffff;
+      box-shadow: 5px 5px 50px 0px #890000;
+    }
+    
+    .Explore a {
+      text-decoration: none;
+      font-size: 20px;
+      color: #ff0000;
+      position: relative;
+      padding: 10px 15px;
+      border: 1px solid #ee0000;
+      background-color: transparent;
+      transition: background-color 0.1s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+    
+    #vios {
+      border-top: #820000 2px solid;
+      border-bottom: 2px solid #820000;
+      width: 100%;
+      height:auto;
+      position: relative;
+    }
+    
+
+    .car-details {
+        margin-right:50px;
+    transform: skew(-10deg);
+      font-size: 100px;
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      background-color: rgba(237, 242, 244, 0.8);
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      max-width: 50%;
+    }
+    
+    .details-title {
+      color: #ff0000;
+      text-align: center;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+    
+    .specs-container {
+      display: flex;
+    }
+    
+    .specs-column {
+      flex: 1;
+    }
+    
+    .spec-title {
+      font-weight: bold;
+      color: #ee0000;
+    }
+    
+    .specs-column p {
+      color: #333;
+      margin-bottom: 5px;
+      font-size: 20px;
+    }
+    
+    .car-details h2 {
+      color: #ee0000;
+      margin-bottom: 10px;
+      font-size: 40px;
+      font-weight: bold;
+    }
+        </style>
+</head>
+
+<body>
+      <header class="header">
+        <div class="logo">
+            <a href="main.html">  <img src="images/logo.png" alt="Toyota Motors Logo"></a>
+        </div>
+        <div class="header-content">
+            <nav class="navigation">
+                <ul>
+                    <li><a href="Homepage.html">Home</a></li>
+                    <li><a href="Explore.html">Explore Vehicles</a></li>
+                    <li><a href="Services.html" >Services</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li class="logout-link" style="margin-left:50px;"><a href="LoginForm.html"><img src="images/logout.png" alt="Logout"></a></li>
+                </ul>
+            </nav>
+        </div> 
+    </header>
+
+ <section class="main-content">
+    <div class="container">
+        <img id="vios" src="images/Hilux.png" alt="vios" />
+        <div class="car-details">
+    <h2 class="details-title">HILUX 2.8 GR-S 4x4 A/T</h2>
+    <div class="specs-container">
+        <div class="specs-column">
+            <p><span class="spec-title">Model:</span> Hilux</p>
+            <p><span class="spec-title">Engine:</span> 2.8L Diesel, 4-Cylinder</p>
+            
+        </div>
+        <div class="specs-column">
+            <p><span class="spec-title">Horsepower:</span> 108 hp</p>
+            <p><span class="spec-title">0-60 mph:</span> 9.7 seconds</p>
+        </div>
+    </div>
+    <div class="specs-container">
+        <div class="specs-column">
+            <p><span class="spec-title">Torque:</span> 550 / 1600 ~ 2800</p>
+            <p><span class="spec-title">Top Speed:</span> 224 mph</p>
+        </div>
+        <div class="specs-column">
+            <p><span class="spec-title">Transmission:</span> 6 Speed AT</p>
+            <!-- Add more specs as needed -->
+        </div>
+    </div>
+</div>
+        <div class="Explore"><a href="Explore.html">Explore Now</a></div>
+    </div>
+</section>
+    </div>
+    <footer class="footer">
+  <div class="footer-content">
+    <nav class="foot">
+        <hr>
+        <br>
+        
+      <img src="images/toyotaicon.png" alt="logo" width="70px" height="70px">
+      <div class="social-icons">
+      
+        <img src="images/fblogo.png" alt="Facebook" width="30px" height="30px">
+        <img src="images/insta.png" alt="Instagram" width="30px" height="30px">
+        <img src="images/ytlogo.png" alt="Instagram" width="30px" height="30px">
+        <img src="images/twitterlogo.png" alt="Twitter" width="30px" height="30px">
+      </div>
+    </nav>
+  </div>
+</footer>
+</body>
+
+</html>

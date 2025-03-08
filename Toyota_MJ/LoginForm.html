@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="css.css">
+  <link rel="icon" type="image/x-icon" href="images/logo.png">
+  <title>Toyota Motors Philippines</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+   /*   background-color: #edf2f4; */
+      font-family: Verdana;
+      background-image:url('images/background.png');
+        background-repeat:no-repeat;
+        background-size:cover;
+    }
+
+    .login-container {
+      margin-top:80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 75vh;
+    }
+
+    .login-form-container {
+      background-color: rgba(237, 242, 244, 0.1); 
+      backdrop-filter: blur(10px); 
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 5px 5px 35px 0px #444;
+      width: 300px; 
+      margin: auto; 
+      border:1px solid #820000;
+    }
+
+    .login-form h2 {
+    font-weight: bold;
+    color: #820000;
+    text-shadow: 2px 2px 4px #000;
+    letter-spacing: 1px;
+    transition: color 0.3s ease-in-out;
+    font-family:Gotham;
+    text-align:center;
+    font-size:30px;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      color: #820000;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #820000;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    button.login-button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 15px;
+      background-color: #820000;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    }
+
+    button.login-button:hover {
+      background-color: #780000;
+    }
+    #title {
+        font-size:50px;
+        color: #ee0000;
+        font-family:Verdana;
+        margin-left:20px;
+        font-weight:bold;
+    }
+    .border {
+        margin-left:35px;
+        transform: skew(-25deg);
+    }
+    .sign {
+        color: #333333;
+    }
+  
+  </style>
+
+</head>
+
+<body>
+  <!-- Your existing HTML content -->
+
+  <header class="header" style="align-items:center;">
+    <!-- Your header content -->
+    <img src="images/logo.png" alt="logo" style="width:50px; height:50px; margin-right:5px;">
+    <div class="border"></div>
+    <p id="title"><span class="sign">SIGN</span>IN</p>
+  </header>
+
+
+  <div class="login-container">
+    <div class="login-form-container">
+      <form class="login-form" action="main.html" method="_self">
+        <h2><b>LOGIN</b></h2>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+        <button type="submit" class="login-button" >Login</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+
+</html>

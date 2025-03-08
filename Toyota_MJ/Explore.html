@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <title>Toyota Vehicles</title>
+    <style>
+
+      .vehicle-header {
+    position: relative;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    overflow: hidden;
+    max-height: 400px;
+}
+html { 
+    scroll-behavior: smooth; 
+}
+
+.vehicle-header img {
+    width: 100%;
+    height: auto;
+}
+
+.vehicle-title {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0) skewX(-21deg);
+    background-color: hsla(0, 0%, 100%, .9);
+    max-width: 570px;
+    color: #eb0a1e;
+    margin: auto;
+    padding: 29px 30px 25px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vehicle-title h1 {
+    font-size: 40px;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    line-height: 1.5; 
+    font-style: normal;
+    transform: skewX(21deg);
+    bottom:0;
+}
+.vehicle-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:150px;
+}
+.des-con{
+    width:51%;
+    margin: 0;
+    text-align: center;
+    font-size:15px;
+}
+.vehicle-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom:50px;
+}
+.list li{
+    font-size:15px;
+    margin-left:20px;
+}
+.list a{
+    color:#637385;
+}
+#box {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    width: 100%;
+}
+
+.box-title,
+.box-description {
+    margin: 0 148px; 
+    text-align: left;
+}
+.box-title h1{
+    font-size:30px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.navigation-box {
+    background-color: #fafafa;
+    width:100%;
+    height:100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.card {
+    display: flex;
+    max-width: 1400px;
+    margin: auto;
+    margin-top: 10px;
+    
+}
+
+.card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card li {
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+
+.card h1 {
+    font-size: 20px;
+    margin: 10px 0;
+    margin-left: 50px;
+}
+
+.card p.price {
+    font-size: 1.1em;
+    color: #888;
+    margin-left: 50px;
+}
+.up a {
+    color:#333;
+    font-size:30px;
+    font-weight: bold;
+    position: relative;
+    text-decoration: none;
+}
+
+.up a::before {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: transparent;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.up a:hover::before {
+    visibility: visible;
+  transform: scaleX(1);
+  background-color: #EC0A1E;
+}
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="main.html">  <img src="images/logo.png" alt="Toyota Motors Logo"></a>
+        </div>
+        <div class="header-content">
+            <nav class="navigation">
+                <ul>
+                    <li><a href="Homepage.html">Home</a></li>
+                    <li><a href="Explore.html" class="selected">Explore Vehicles</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li class="logout-link" style="margin-left:50px;"><a href="LoginForm.html"><img src="images/logout.png" alt="Logout"></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+        
+    <section class="main-content"  id="top">
+        <div class="vehicle-header">
+            <img src="images/TMPWebsite_VehicleList_Tablet.jpg";>
+            <div class="vehicle-title"><h1>Toyota Vehicles</h1></div>
+        </div>
+        <div class="vehicle-description">
+            <div class="des-con">
+                <p>Here at Toyota, we offer a wide selection of vehicles suited for you. Whether it's a sedan, an SUV, or a hatchback, our line of quality, durable, and reliable Toyota vehicles will address your needs and more!</p>
+            </div>
+            </div>
+
+            <div class="vehicle-content">
+               <div class="navigation-box"><nav class="navigation">
+                    <ul  class="list">
+                        <li><a href="#Hatchbacks">Hatchbacks & Sedans</a></li>
+                        <li><a href="#Crossovers">Crossovers & SUVs</a></li>
+                        <li><a href="#MVPs">MVPs</a></li>
+                        <li><a href="#Vans">Vans & Pick-ups</a></li>
+                        <li><a href="#Elect">Electrified</a></li>
+                        <li><a href="#Gazoo">Gazoo Racing</a></li>                  
+                    </ul>
+                </nav>
+            </div> 
+            </div>
+            <div id="box">
+                <div class="box-title"><h1 id="Hatchbacks">Hatchbacks & Sedans</h1></div>
+                <div class="box-description"><p>Discover the versatility and functionality of our Sedan lineup, featuring 4 doors and a spacious trunk. Or, for even more convenience, opt for our Hatchback models with their added 5th door. Built for a comfortable driving experience, our line of Hatchbacks and Sedans provides you with a world-class driving experience.</p></div>
+                <div class="card">
+                    <ul>
+                        <li>
+                            <img src="images/Wigo.png" alt="Car 1">
+                            <h1>Wigo</h1>
+                            <p class="price">&#x20B1; 729,000.00</p>
+                        </li>   
+                        <li>
+                            <img src="images/vios.png" alt="Car 2">
+                            <h1>Vios</h1>
+                            <p class="price">&#x20B1; 1,039,000.00</p>
+                        </li>
+                        <li>
+                            <img src="images/camry.png" alt="Car 3">
+                            <h1>Camry</h1>
+                            <p class="price">&#x20B1; 2,457,000.00</p>
+                        </li>  
+                        <li>
+                            <img src="images/viosgr.png" alt="Car 4">
+                            <h1>Vios GR-S</h1>
+                            <p class="price">&#x20B1; 1,055,000.00</p>
+                        </li>  
+                        <li>
+                            <img src="images/corollaatlis.png" alt="Car 5">
+                            <h1>Corolla Atlis</h1>
+                            <p class="price">&#x20B1; 1,302,000.00</p>
+                        </li>  
+                    </ul>
+                  </div>
+                  <div class="box-title"><h1 id="Crossovers">Crossovers & SUVs</h1></div>
+                <div class="box-description"><p>Don't let road bumps ruin your ride. With a durable and stylish vehicle, tackle any road with confidence and ease. From urban roads to off-roading, our vehicles are designed to provide smooth driving performance, passenger comfort, fun, and peace of mind.</p></div>
+                <div class="card">
+                    <ul>
+                        <li>
+                            <img src="images/Yaris-Cross.png" alt="Car 1">
+                            <h1>Yaris Cross</h1>
+                            <p class="price">&#x20B1; 1,598,000.00</p>
+                        </li>   
+                        <li>
+                            <img src="images/Raize.png" alt="Car 2">
+                            <h1>Raize</h1>
+                            <p class="price">&#x20B1; 1,063,000.00</p>
+                        </li>
+                        <li>
+                            <img src="images/Rav4.png" alt="Car 3">
+                            <h1>RAV4</h1>
+                            <p class="price">&#x20B1; 2,647,000.00</p>
+                        </li>  
+                        <li>
+                            <img src="images/Veloz.png" alt="Car 4">
+                            <h1>Veloz</h1>
+                            <p class="price">&#x20B1; 1,265,000.00</p>
+                        </li>  
+                        <li>
+                            <img src="images/Rush.png" alt="Car 5">
+                            <h1>Rush</h1>
+                            <p class="price">&#x20B1; 1,196,000.00</p>
+                        </li>  
+                        <li>
+                            <img src="images/Fortuner-GR-S.png" alt="Car 6">
+                            <h1>Fortuner GR-S</h1>
+                            <p class="price">&#x20B1; 2,645,000.00</p>
+                        </li> 
+                        <li>
+                            <img src="images/Land-Cruiser-Prado.png" alt="Car 7">
+                            <h1>Land Cruiser Prado</h1>
+                            <p class="price">&#x20B1; 4,502,000.00</p>
+                        </li>                       
+                    </ul>
+                  </div>
+                  <div class="box-title"><h1 id="MVPs">MPVs</h1></div>
+                <div class="box-description"><p>In need of a vehicle that fits your “more”? An MPV is your best bet! Our proven line up of Toyota cars provides an excellent passenger experience that ensures your safety on the road. So you can take your family and important items everywhere in comfort.</p></div>
+                <div class="card">
+                    <ul>
+                        <li>
+                            <img src="images/Zenix.png" alt="Car 1">
+                            <h1>Zenix</h1>
+                            <p class="price">&#x20B1; 1,968,000.00</p>
+                        </li>   
+                        <li>
+                            <img src="images/Avanza.png" alt="Car 2">
+                            <h1>Avanza</h1>
+                            <p class="price">&#x20B1; 1,059,000.00</p>
+                        </li>
+                        <li>
+                            <img src="images/Innova.png" alt="Car 3">
+                            <h1>Innova</h1>
+                            <p class="price">&#x20B1; 1,804,000.00</p>
+                        </li>  
+                        <li>
+                            <img src="images/Corolla-cross.png" alt="Car 3">
+                            <h1>Corolla Cross</h1>
+                            <p class="price">&#x20B1; 1,844,000.00</p>
+                        </li> 
+                    </ul>
+                  </div>
+                  <div class="box-title"><h1 id="Vans">Vans & Pick-ups</h1></div>
+                <div class="box-description"><p>No matter the need, we’ve got you covered. Toyota offers a range of vans and pick-ups that gives you the freedom to move your cargo or passengers thanks to its increased capacity. Designed with safety and comfort in mind, you are guaranteed you get to your destination worry-free.</p></div>
+                <div class="card">
+                    <ul>
+                        <li>
+                            <img src="images/Alphard.png" alt="Car 1">
+                            <h1>Alphard</h1>
+                            <p class="price">&#x20B1; 5,000,000.00</p>
+                        </li>   
+                        <li>
+                            <img src="images/Lite.png" alt="Car 2">
+                            <h1>Lite Ace</h1>
+                            <p class="price">&#x20B1; 695,000.00</p>
+                        </li>
+                        <li>
+                            <img src="images/Hiace.png" alt="Car 3">
+                            <h1>Hiace</h1>
+                            <p class="price">&#x20B1; 1,499,000.00</p>
+                        </li>  
+                        <li>
+                            <img src="images/Commuter.png" alt="Car 4">
+                            <h1>Commuter Deluxe</h1>
+                            <p class="price">&#x20B1; 1,784,000.00</p>
+                        </li> 
+                        <li>
+                            <img src="images/GL_Grandia.png" alt="Car 5">
+                            <h1>GL Grandia</h1>
+                            <p class="price">&#x20B1; 2,318,000.00</p>
+                        </li>
+                        <li>
+                            <img src="images/GL_Grandia_Tourer.png" alt="Car 6">
+                            <h1>GL Grandia Tourer</h1>
+                            <p class="price">&#x20B1; 2,476,000.00</p>
+                        </li>   
+                        <li>
+                            <img src="images/Super_Grandia.png" alt="Car 7">
+                            <h1>Super Grandia</h1>
+                            <p class="price">&#x20B1; 3,216,000.00</p>
+                        </li>
+                        <li>
+                            <img src="images/Coaster.png" alt="Car 8">
+                            <h1>Coaster</h1>
+                            <p class="price">&#x20B1; 4,018,000.00</p>
+                        </li>  
+                        <li>
+                            <img src="images/Hilux2.png" alt="Car 9">
+                            <h1>Hilux</h1>
+                            <p class="price">&#x20B1; 2,186,000.00</p>
+                        </li> 
+                        <li>
+                            <img src="images/Hilux_Fleet.png" alt="Car 10">
+                            <h1>Hilux Fleet</h1>
+                            <p class="price">&#x20B1; 1,189,000.00</p>
+                        </li> 
+                    </ul>
+                  </div>
+                  <div class="box-title"><h1 id="Elect">Electrified</h1></div>
+                <div class="box-description"><p>If sustainability is important to you, our Hybrid Electric Vehicles (HEVs) offer that and more! In addition to reducing carbon emissions that are good for the environment, our widest range of HEVs gives you a satisfying drive with their responsive acceleration feature from its electric motor without any additional maintenance. Experience seamless performance from Toyota’s Hybrid Electric Vehicle technology.</p></div>
+                <div class="card">
+                    <ul>
+                        <li>
+                            <img src="images/Zenix.png" alt="Car 1">
+                            <h1>Zenix</h1>
+                            <p class="price">&#x20B1; 1,968,000.00</p>
+                        </li>   
+                        <li>
+                            <img src="images/Yaris-Cross.png" alt="Car 2">
+                            <h1>Yaris Cross</h1>
+                            <p class="price">&#x20B1; 1,598,000.00</p>
+                        </li>
+                        <li>
+                            <img src="images/Alphard.png" alt="Car 3">
+                            <h1>Alphard</h1>
+                            <p class="price">&#x20B1; 5,000,000.00</p>
+                        </li>  
+                        <li>
+                            <img src="images/Rav4.png" alt="Car 4">
+                            <h1>RAV4</h1>
+                            <p class="price">&#x20B1; 2,647,000.00</p>
+                        </li> 
+                        <li>
+                            <img src="images/camry.png" alt="Car 5">
+                            <h1>Camry</h1>
+                            <p class="price">&#x20B1; 2,457,000.00</p>
+                        </li>
+                        <li>
+                            <img src="images/corollaatlis.png" alt="Car 6">
+                            <h1>Corolla Atlis</h1>
+                            <p class="price">&#x20B1; 1,302,000.00</p>
+                        </li>   
+                        <li>
+                            <img src="images/Corolla-cross.png" alt="Car 7">
+                            <h1>Corolla Cross</h1>
+                            <p class="price">&#x20B1; 1,844,000.00</p>
+                        </li>
+                    </ul>
+                  </div>
+                  <div class="box-title"><h1 id="Gazoo">Gazoo Racing</h1></div>
+                <div class="box-description"><p>Dominate any road with our Gazoo Racing vehicles. Our line of Specialty GR vehicles offers eye-catching style and incredible performance that will make you feel race-ready! Race your ambition with our extraordinary GR performance cars.</p></div>
+                <div class="card">
+                    <ul>
+                        <li>
+                            <img src="images/GR_86.png" alt="Car 1">
+                            <h1>GR 86</h1>
+                            <p class="price">&#x20B1; 2,596,000.00</p>
+                        </li>   
+                        <li>
+                            <img src="images/GR_Yaris.png" alt="Car 2">
+                            <h1>GR Yaris</h1>
+                            <p class="price">&#x20B1; 2,940,000.00</p>
+                        </li>
+                        <li>
+                            <img src="images/GR_Supra.png" alt="Car 3">
+                            <h1>GR Supra</h1>
+                            <p class="price">&#x20B1; 5,396,000.00</p>
+                        </li>  
+                        <li>
+                            <img src="images/Vios_GR-S.png" alt="Car 4">
+                            <h1>Vios GR-S</h1>
+                            <p class="price">&#x20B1; 1,055,000.00</p>
+                        </li> 
+                        <li>
+                            <img src="images/Corolla_Altis_GR-S.png" alt="Car 5">
+                            <h1>Corolla Altis GR-S</h1>
+                            <p class="price">&#x20B1; 1,302,000.00</p>
+                        </li>
+                        <li>
+                            <img src="images/Rush_GR-S.png" alt="Car 6">
+                            <h1>Rush GR-S</h1>
+                            <p class="price">&#x20B1; 1,196,000.00</p>
+                        </li>   
+                        <li>
+                            <img src="images/Corolla_Cross_GR-S_HEV.png" alt="Car 7">
+                            <h1>Corolla Cross GR-S HEV</h1>
+                            <p class="price">&#x20B1; 1,844,000.00</p>
+                        </li>
+                        <li>
+                            <img src="images/Hilux_GR-S.png" alt="Car 8">
+                            <h1>Hilux GR-S</h1>
+                            <p class="price">&#x20B1; 2,186,000.00</p>
+                        </li>
+                        <li>
+                            <img src="images/Fortuner-GR-S.png" alt="Car 9">
+                            <h1>Fortuner GR-S</h1>
+                            <p class="price">&#x20B1; 2,645,000.00</p>
+                        </li>
+                    </ul>
+                  </div>
+            </div>
+            <center><span class="up"><a href="#top">Back to top</a></span></center>
+</section>
+<footer class="footer">
+    <div class="footer-content">
+      <nav class="foot">
+          <hr>
+          <br>
+          
+        <a href="main.html"><img src="images/toyotaicon.png" alt="logo" width="70px" height="70px"></a>
+        <div class="social-icons">
+        
+          <img src="images/fblogo.png" alt="Facebook" width="30px" height="30px">
+          <img src="images/insta.png" alt="Instagram" width="30px" height="30px">
+          <img src="images/ytlogo.png" alt="Instagram" width="30px" height="30px">
+          <img src="images/twitterlogo.png" alt="Twitter" width="30px" height="30px">
+        </div>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
+
